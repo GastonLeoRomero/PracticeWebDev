@@ -1,0 +1,28 @@
+body {
+  font-family: sans-serif;
+}
+h1 {
+  color: orangered;
+}
+/*esto es un comentario en css*/
+h2 {
+  border-color: black;
+  border-style: solid;
+  text-align: center;
+}
+
+.text-20 {
+  font-size: 20px;
+}
+.text-32 {
+  font-size: 32px;
+}
+.bg-skyblue {
+  background-color: skyblue;
+}
+.bg-steelblue {
+  background-color: steelblue;
+}
+.text-white {
+  color: white;
+}
