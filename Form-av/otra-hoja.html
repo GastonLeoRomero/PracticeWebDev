@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Un poco de CSS</title>
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
   <body>
@@ -25,14 +25,31 @@
     <h2>Un poco de css</h2>
     <p><i>Cascading Style Sheets</i> -Hojas de Estilo en Cascada</p>
     <br />
-    <h3 id="temario-css">Temario del curso</h3>
-    <ul>
-      <li>
-        <a href="otra-hoja.html#selectores-basicos">Selectores básicos</a>
-      </li>
-      <li><a href="otra-hoja.html"></a></li>
-    </ul>
-
+    <article id="temario-css">
+      <h3>Temario del curso</h3>
+      <ul>
+        <li>
+          <a href="otra-hoja.html#selectores-basicos">Selectores básicos</a>
+        </li>
+        <li>
+          <a href="otra-hoja.html#selectores-avanzados">Selectores Avanzados</a>
+        </li>
+        <li><a href="otra-hoja.html#pseudo-clases">Pseudoclases</a></li>
+        <li><a href="otra-hoja.html#pseudo-elements">Pseudoelementos</a></li>
+        <li>
+          <a href="otra-hoja.html#agrupar-selectores">Agrupar Selectores</a>
+        </li>
+        <li>
+          <a href="otra-hoja.html#algoritmo-css">El Algoritmo de CSS</a>
+        </li>
+        <li>
+          <a href="otra-hoja.html#prefijos-navegadores"
+            >Prefijos de los Navegadores</a
+          >
+        </li>
+        <li><a href=""></a></li>
+      </ul>
+    </article>
     <hr />
     <article id="selectores-basicos">
       <h4>Selectores básicos</h4>
@@ -60,6 +77,190 @@
         numquam perspiciatis quibusdam assumenda voluptate laboriosam rem in hic
         quis, nihil expedita?
       </p>
+      <a href="otra-hoja.html#temario-css">🆙</a>
+    </article>
+    <article id="selectores-avanzados">
+      <h4>Selectores Avanzados</h4>
+      <h5>Selectores de hijos</h5>
+      <h6>Selector de hijo directo</h6>
+      <ul class="hijo-directo">
+        <li><b>Primavera</b></li>
+        <li><b>Otoño</b></li>
+        <li><b>Invierno</b></li>
+        <li><b>Verano</b></li>
+      </ul>
+      <h6>Selector de hijo descendiente</h6>
+      <ul class="hijo-descendiente">
+        <li><b>Primavera</b></li>
+        <li><b>Otoño</b></li>
+        <li><b>Invierno</b></li>
+        <li><b>Verano</b></li>
+      </ul>
+      <h5>Selectores de hermanos</h5>
+      <h6>Hermanos en general</h6>
+      <ul>
+        <li><b>Primavera</b></li>
+        <li class="hnos-general"><b>Otoño</b></li>
+        <li><b>Invierno</b></li>
+        <li><b>Verano</b></li>
+      </ul>
+      <h6>Hermanos adyacentes</h6>
+      <ul>
+        <li><b>Primavera</b></li>
+        <li class="hno-ady"><b>Otoño</b></li>
+        <li><b>Invierno</b></li>
+        <li><b>Verano</b></li>
+      </ul>
+      <h5>Selectores der atributos</h5>
+      <nav class="selector-atrib">
+        <ul>
+          <li><a href="https://jonmircha.com" target="_blank">Inicio</a></li>
+          <li>
+            <a href="https://jonmircha.com/cursos" target="_blank">Cursos</a>
+          </li>
+          <li><a href="https://jonmircha.com/blog" target="_blank">Blog</a></li>
+          <li><a href="https://jonmircha.com/hola" target="_blank">Hola</a></li>
+          <li>
+            <a href="https://jonmircha.com/mentoria" target="_blank"
+              >Mentoria</a
+            >
+          </li>
+          <li>
+            <a href="https://jonmircha.com/taller-minimalista" target="_blank"
+              >Taller</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <h5>Selector Universal (*)</h5>
+      <ul class="selec-univ">
+        <li><b>Primavera</b></li>
+        <li><b>Otoño</b></li>
+        <li><b>Invierno</b></li>
+        <li><b>Verano</b></li>
+      </ul>
+      <a href="otra-hoja.html#temario-css">🆙</a>
+    </article>
+    <article id="pseudo-clases">
+      <h4>Pseudoclases</h4>
+      <form class="ps-cl">
+        <input
+          type="text"
+          name="nombre"
+          placeholder="Escribe tu nombre"
+          required
+        />
+        <br />
+        <input
+          type="email"
+          name="email"
+          placeholder="Escribe tu email"
+          required
+        />
+        <br />
+        <input type="submit" />
+      </form>
+    </article>
+    <nav class="menu-pseudoclases">
+      <a href="seccion-1">Seccion 1</a>
+      <a href="seccion-2">Seccion 2</a>
+      <a href="seccion-3">Seccion 3</a>
+      <a href="seccion-4">Seccion 4</a>
+    </nav>
+    <p class="pseudo-clas">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi,
+      voluptates odit. Aspernatur dolores libero iste excepturi aut mollitia
+      reiciendis. Eaque libero adipisci placeat? Dolor, repudiandae sapiente
+      laborum harum iste perspiciatis.
+    </p>
+    <ol class="listas-pseudo">
+      <li>Goku</li>
+      <li>Gohan</li>
+      <li>Vegeta</li>
+      <li>Trunks</li>
+      <li>Goten</li>
+      <li>Picoro</li>
+      <li>Krilin</li>
+      <li>Ten Shin Han</li>
+      <li>Bulma</li>
+      <li>Dende</li>
+      <li>Majin Boo</li>
+      <li>Cell</li>
+    </ol>
+    <article class="artic-uno">
+      <header>Esto es un header</header>
+      <p>Esto es un p</p>
+      <div>Esto es una div</div>
+      <p>Esto es otro p</p>
+      <section>Esto es una section</section>
+      <p>Este es otro p</p>
+      <div>Esto es otra div</div>
+      <p>Otro parrafo</p>
+      <footer>Esto es un footer</footer>
+    </article>
+    <a href="otra-hoja.html#temario-css">🆙</a>
+    <article id="pseudo-elements">
+      <h4>Pseudoelementos</h4>
+      <p>
+        <i>Peugeot 308</i> <span class="peug-308">308 Felline</span>
+        <span class="p-precio">100</span>
+      </p>
+      <p class="p-pseudoelemntos">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo ipsam
+        sequi fugiat excepturi provident soluta officiis, vero reprehenderit,
+        laboriosam cum omnis eum ducimus ea minima. Deserunt illum magni totam
+        blanditiis!
+      </p>
+      <input
+        class="input-p"
+        type="text"
+        name="nombre"
+        placeholder="Escribe tu nomnbre"
+      />
+      <br />
+      <a href="otra-hoja.html#temario-css">🆙</a>
+    </article>
+    <article id="agrupar-selectores">
+      <h3>Agrupar Selectores</h3>
+      <form class="form-ag-selectores">
+        <input type="text" name="nombre" placeholder="Escribe tu nombre" />
+        <input type="email" name="correo" placeholder="Escribe tu correo" />
+        <textarea
+          name="comentarios"
+          placeholder="Escribe tus comentarios"
+          cols="30"
+          rows="10"
+        ></textarea>
+        <input type="submit" />
+      </form>
+      <a href="otra-hoja.html#temario-css">🆙</a>
+    </article>
+    <article id="algoritmo-css">
+      <h3>El Algoritmo de CSS</h3>
+      <ul>
+        <li>La Cáscada</li>
+        <li>La Especificidad</li>
+        <li>La Herencia</li>
+      </ul>
+      <blockquote id="cita-marco" class="cita-marco">
+        Sé tolerante con los demás y estricto contigo mismo-
+        <cite>Marco Aurelio</cite>
+      </blockquote>
+      <a href="otra-hoja.html#temario-css">🆙</a>
+    </article>
+    <article id="prefijos-navegadores">
+      <h3>Prefijos de los Navegadores</h3>
+      <ol>
+        <li>
+          Navegadores de Microsoft <code><b>-ms-</b></code>
+        </li>
+        <li>
+          Firefox <code><b>-moz-</b></code>
+        </li>
+        <li>
+          Todos los demas navegadores <code><b>-webkit-</b></code>
+        </li>
+      </ol>
       <a href="otra-hoja.html#temario-css">🆙</a>
     </article>
     <br /><br />

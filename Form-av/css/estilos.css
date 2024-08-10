@@ -26,3 +26,132 @@ h2 {
 .text-white {
   color: white;
 }
+html {
+  scroll-behavior: smooth;
+}
+.hijo-directo > li {
+  background-color: thistle;
+}
+.hijo-descendiente b {
+  background-color: thistle;
+}
+.hnos-general ~ li {
+  background-color: thistle;
+}
+.hno-ady + li {
+  background-color: thistle;
+}
+.selector-atrib a[href] {
+  color: orangered;
+}
+* {
+  font-family: sans-serif;
+}
+.selec-univ * {
+  font-size: 24px;
+}
+.ps-cl *:required {
+  border-color: yellow;
+}
+.ps-cl *:valid {
+  border-color: green;
+}
+.ps-cl *:invalid {
+  border-color: red;
+}
+.ps-cl *:focus {
+  background-color: aqua;
+}
+.menu-pseudoclases a:hover {
+  color: pink;
+}
+.pseudo-clas:hover {
+  font-size: 20px;
+}
+#temario-css:target {
+  background-color: greenyellow;
+}
+.listas-pseudo li:first-child {
+  color: green;
+}
+.listas-pseudo li:last-child {
+  color: violet;
+}
+.listas-pseudo li:nth-child(3) {
+  color: navy;
+}
+.listas-pseudo li:nth-child(4n) {
+  font-size: 20px;
+}
+.listas-pseudo li:nth-child(3n) {
+  font-weight: bold;
+}
+.listas-pseudo li:nth-child(even) {
+  background-color: yellow;
+}
+.listas-pseudo li:nth-child(odd) {
+  background-color: orange;
+}
+.artic-uno p:first-of-type {
+  background-color: pink;
+}
+.artic-uno p:last-of-type {
+  background-color: violet;
+}
+.artic-uno p:nth-last-of-type(3) {
+  background-color: fuchsia;
+}
+.peug-308::before {
+  content: "🚗";
+}
+.peug-308::after {
+  content: "🔥";
+}
+.p-precio::before {
+  content: "$";
+  font-weight: bold;
+}
+.p-precio::after {
+  content: "USD";
+  font-weight: bold;
+}
+.p-pseudoelemntos::first-letter {
+  font-weight: bold;
+  font-size: 32px;
+}
+.input-p::placeholder {
+  color: goldenrod;
+}
+.form-ag-selectores input[type="text"],
+.form-ag-selectores input[type="email"],
+.form-ag-selectores textarea {
+  border-color: yellow;
+  border-width: 2px;
+  border-style: dashed;
+  background-color: black;
+  font-size: 20px;
+  display: block;
+  width: 300px;
+}
+blockquote {
+  background-color: burlywood;
+}
+#cita-marco {
+  background-color: lightgreen;
+}
+blockquote.cita-marco {
+  background-color: tomato;
+  font-size: 32px;
+  border-style: dotted;
+  border-color: blue;
+}
+.cita-marco {
+  background-color: cornflowerblue;
+}
+.cita-marco cite {
+  background-color: brown !important;
+  font-size: 24px;
+}
+blockquote#cita-marco {
+  background-color: salmon;
+}
